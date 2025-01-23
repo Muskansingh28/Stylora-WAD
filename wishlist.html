@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Stylora</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e3f2fd;
+        }
+
+        .wishlist-container {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1976d2;
+        }
+
+        .wishlist-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .wishlist-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .wishlist-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .wishlist-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .wishlist-item button {
+            padding: 10px;
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .wishlist-item button:hover {
+            background-color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wishlist-container">
+        <h2>My Wishlist</h2>
+        <div class="wishlist-items">
+            <div class="wishlist-item">
+                <img src="https://source.unsplash.com/300x200/?clothes" alt="Wishlist Item 1">
+                <h3>Summer Dress</h3>
+                <button>Remove</button>
+            </div>
+            <div class="wishlist-item">
+                <img src="https://source.unsplash.com/300x200/?shoes" alt="Wishlist Item 2">
+                <h3>Stylish Shoes</h3>
+                <button>Remove</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
